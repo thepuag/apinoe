@@ -45,12 +45,12 @@ public class CustomOAuth2UserService extends DefaultOAuth2UserService {
             Usuario usuario = usuarioExistente.get();
             boolean actualizar = false;
             
-            if (!googleId.equals(usuario.getGoogleId())) {
+            if (!java.util.Objects.equals(googleId, usuario.getGoogleId())) {
                 usuario.setGoogleId(googleId);
                 actualizar = true;
             }
             
-            if (!imagenUrl.equals(usuario.getImagenUrl())) {
+            if (!java.util.Objects.equals(imagenUrl, usuario.getImagenUrl())) {
                 usuario.setImagenUrl(imagenUrl);
                 actualizar = true;
             }

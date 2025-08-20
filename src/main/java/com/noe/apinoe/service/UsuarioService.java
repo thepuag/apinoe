@@ -17,3 +17,4 @@ public interface UsuarioService {
     void activar(Integer id);
     void desactivar(Integer id);
 }
+

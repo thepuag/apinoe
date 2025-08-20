@@ -10,9 +10,9 @@
 	</parent>
 	<groupId>com.noe</groupId>
 	<artifactId>apinoe</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>apinoe</name>
-	<description>API de Noe para ecommerce en Java</description>
+	<description>API de Noe para proyectos en Java</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -68,10 +68,10 @@
 		</dependency>
 		
 		<!-- BCrypt para hash -->
-    <dependency>
-        <groupId>org.springframework.security</groupId>
-        <artifactId>spring-security-crypto</artifactId>
-    </dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-crypto</artifactId>
+		</dependency>
 
 		<!-- SQL server-->
 		<dependency>
@@ -85,7 +85,13 @@
 			<artifactId>spring-security-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-
+		<!-- Lombok para reducir boilerplate -->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.24</version>
+			<scope>provided</scope>
+		</dependency>
 
 	</dependencies>
 
